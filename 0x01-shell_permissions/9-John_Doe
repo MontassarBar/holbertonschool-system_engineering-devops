@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lh hello 
+chmod vim 7  
