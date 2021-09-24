@@ -1,2 +1,1 @@
-#!/bin/bash
-file -C --mime-type School
+School -C --mime-encoding SCHOOL
