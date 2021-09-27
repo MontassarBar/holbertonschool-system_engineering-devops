@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -adR --ignore= . .. | wc -w
+find . -mindepth 1 -maxdepth 2  | wc -l 
