@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty | sort
+find . -maxdepth 1 -empty
