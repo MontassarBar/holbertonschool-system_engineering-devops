@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$((128*export -n TRUEKNOWLEDGE))"
+echo "$((128*$TRUEKNOWLEDGE))"
