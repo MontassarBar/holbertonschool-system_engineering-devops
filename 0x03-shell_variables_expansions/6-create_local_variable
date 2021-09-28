@@ -1,2 +1,2 @@
 #!/bin/bash
-export [-fn] [BEST[=School]
+export -f BEST=School
