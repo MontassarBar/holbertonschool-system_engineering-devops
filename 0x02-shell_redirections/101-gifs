@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.gif" | LC_ALL=C sort -f | rev | cut -c 5- | rev 
+printf "%s\n" $(find . -type f -name "*.gif" | LC_ALL=C sort -f | rev | cut -c 5- | rev)
