@@ -2,20 +2,15 @@
 #displays 4 and then bad luck from China for the 4th loop iteration
 #displays 9 and then bad luck from Japan for the 9th loop iteration
 #displays 17 and then bad luck from Italy for the 17th loop iteration
-x=1
-while [ $x -le 20 ]
+x=0
+while [ $x -le 19 ]
 do
-    if [ $x == 4 ]
-    then
-        echo "bad luck from China"
-    elif [ $x == 9 ]
-    then
-        echo "bad luck from Japan"
-    elif [ $x == 17 ]
-    then
-        echo "bad luck from Italy"
-    else
-        echo $x
-    fi
     ((x++))
+    case $x in
+        "4") echo "bad luck from China";;
+        "9") echo "bad luck from Japan";;
+        "17") echo "bad luck from Italy";;
+        *) echo $x
+        ;;
+    esac
 done
