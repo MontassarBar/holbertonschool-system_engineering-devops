@@ -6,11 +6,11 @@ x=0
 while [ $x -le 19 ]
 do
     ((x++))
+    echo $x
     case $x in
         "4") echo "bad luck from China";;
         "9") echo "bad luck from Japan";;
-        "17") echo "bad luck from Italy";;
-        *) echo $x
+        "17") echo "bad luck from Italy"
         ;;
     esac
 done
