@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#isplays To infinity and beyond indefinitely
+#In between each iteration of the loop, add a sleep 2
+x=0;while [ $x -le 1 ]; do echo "To infinity and beyond"; sleep 2; done
