@@ -4,9 +4,11 @@ file {'ssh_config':
 ensure   => present,
 path     => '/etc/ssh/sshd_config',
 line     => 'HostbasedAuthentication no',
+multiple => true,
 }
 file {'ssh config':
 ensure   => present,
 path     => '/etc/ssh/sshd_config',
 line     => 'IdentityFile ~/.ssh/school',
+multiple => true,
 }
