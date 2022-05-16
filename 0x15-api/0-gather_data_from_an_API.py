@@ -22,4 +22,4 @@ if __name__ == "__main__":
     for i in range(0, len(response)):
         if response[i]["userId"] == int(argv[1]) and response[i][
                 "completed"] is True:
-            print("     ", response[i]["title"])
+            print("\t", response[i]["title"])
