@@ -14,8 +14,9 @@ if __name__ == "__main__":
     response2 = y.json()
     for j in range(1, len(response2)):
         for i in range(0, len(response)):
+            if response[i]["userId"] == j:
                 dict = {}
-                dict["username"] = response2[j]["username"]
+                dict["username"] = response2[j - 1]["username"]
                 dict["task"] = response[i]["title"]
                 dict["completed"] = response[i]["completed"]
                 l.append(dict)
