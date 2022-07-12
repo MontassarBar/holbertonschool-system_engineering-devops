@@ -12,9 +12,8 @@ def top_ten(subreddit):
     if (response == {'message': 'Not Found', 'error': 404}):
         print('None')
     else:
-        i = 0
         y = response.get("data").get("children")
-        while (i < 10):
+        for i in range(0, 10):
             j = y[i].get('data').get('title')
             print(j)
             i += 1
