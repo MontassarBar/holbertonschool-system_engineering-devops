@@ -6,7 +6,7 @@ from requests import get
 
 
 def top_ten(subreddit):
-    URL = f"https://www.reddit.com/r/{subreddit}/top.json?limit=10"
+    URL = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
     x = get(URL, headers={'User-agent': 'monta'})
     response = x.json()
     if (response == {'message': 'Not Found', 'error': 404}):
