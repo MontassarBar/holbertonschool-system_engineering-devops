@@ -10,7 +10,7 @@ def top_ten(subreddit):
     x = get(URL, headers={'User-agent': 'monta'})
     response = x.json()
     if (response == {'message': 'Not Found', 'error': 404}):
-        return (0)
+        print('None')
     else:
         i = 0
         y = response.get("data").get("children")
