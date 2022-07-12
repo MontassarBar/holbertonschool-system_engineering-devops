@@ -16,4 +16,3 @@ def top_ten(subreddit):
         for i in range(0, 10):
             j = y[i].get('data').get('title')
             print(j)
-            i += 1
